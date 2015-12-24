@@ -4,14 +4,14 @@ autoload -Uz promptinit
 promptinit
 
 case "$HOST" in
-    u*)
-		# Nicht EveryWare
-		prompt pws
-		;;
-	*)
-		# EveryWare
-		prompt fire cyan faint cyan green yellow white
-		;;
+  u*)
+    # Special case
+    prompt pws
+    ;;
+  *)
+    # Normal case
+    prompt elite2 white red
+    ;;
 esac
 
 setopt histignorealldups sharehistory
@@ -46,7 +46,7 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# Lade die Shell unabhaengige Shell Aliases Datei
+# Load shell independent aliases
 [[ -r ~/.sh_aliases ]] && . ~/.sh_aliases
 
 # EOF
