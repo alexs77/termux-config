@@ -21,6 +21,8 @@ packages="`busybox sed 's, -.*,,' "$package_file"`"
 apt install -y $packages
 
 cp -rp "$master_dir/data/HOME/." "$HOME"
+rm -f "$HOME/.vimrc"
+ln -s ".vim/.vimrc" "$HOME/.vimrc"
 
 exit $?
 
