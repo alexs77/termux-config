@@ -11,3 +11,5 @@ apt install -y wget
 hash -r
 wget -qO- https://bitbucket.org/alexs77/termmux-config/raw/HEAD/scripts/setup.sh | busybox ash -x
 ```
+
+This will download and run the [setup](scripts/setup.sh) file from the repo.
