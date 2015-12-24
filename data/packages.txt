@@ -1,0 +1,46 @@
+bash - A sh-compatible shell that incorporates useful features from the Korn shell (ksh) and C shell (csh)
+command-not-found - Suggest installation of packages in interactive shell sessions
+termux-tools - Some tools for Termux
+ack-grep - Tool like grep, optimized for programmers
+linux-man-pages - Man pages for linux kernel and C library interfaces
+ranger - File manager with VI key bindings
+aria2 - Multi-protocol & multi-source command-line download utility supporting HTTP/HTTPS, FTP, BitTorrent and Metalink       asciinema - Record and share your terminal sessions, the right way
+bash-completion - Programmable completion for the bash shell
+bc - Arbitrary precision numeric processing language
+bsdtar - The tar(1) and cpio(1) programs from FreeBSD, using libarchive
+bzip2 - Tools for working with bzip2 compression
+curl - Command line tool for transferring data with URL syntax
+dialog - Application used in shell scripts which displays text user interface widgets
+diffutils - Programs (cmd, diff, diff3 and sdiff) related to finding differences between files
+dnsutils - Clients provided with BIND
+file - Command-line tool that tells you in words what kind of data a file contains
+grep - Command which searches one or more input files for lines containing a match to a specified pattern
+gzip - Standard GNU file compression utilities
+inetutils - Collection of common network programs
+less - Terminal pager program used to view the contents of a text file one screen at a time
+lftp - FTP/HTTP client and file transfer program
+lynx - The text web browser
+man - Man page viewer from the mandoc toolset
+mc - Midnight Commander - a powerful file manager
+mutt - Mail client
+neovim - Ambitious Vim-fork focused on extensibility and agility (nvim)
+nmap - Utility for network discovery and security auditing
+openssh - Secure shell for logging into a remote machine
+openssl-tool - The openssl command line cryptographic tool
+p7zip - Command-line version of the 7zip compressed file archiver
+perl - Capable, feature-rich programming language
+pwgen - Password generator which by default, unless given the '-s' option, generates memorable but insecure passwords
+rsync - Utility that provides fast incremental file transfer
+sed - GNU stream text editor
+stunnel - Socket wrapper which can provide TLS support to ordinary applications
+tar - GNU tar for manipulating tar archives
+termux-api - Termux API commands
+termux-tools - Some tools for Termux
+unrar - Tool for extracting files from .rar archives
+unzip - Tools for working with zip files
+vim - Vi IMproved - enhanced vi editor
+w3m - Text based Web browser and pager
+wcalc - Capable calculator
+wget - Commandline tool for retrieving files using HTTP, HTTPS and FTP
+zip - Tools for working with zip files
+zsh - Shell designed for interactive use, although it is also a powerful scripting language
