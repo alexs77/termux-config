@@ -2,17 +2,25 @@
 
 echo "This script sets up the Termux App."
 
-package_file_url="https://bitbucket.org/alexs77/termmux-config/raw/HEAD/data/packages.txt"
-package_file="$HOME/tmp/packages.txt"
+masterzip_url="https://github.com/alexs77/termux-config/archive/master.zip"
+masterzip_file="$HOME/tmp/termux-config-master.zip"
+masterzip_dir="$HOME/tmp/termux-config"
+master_dir="$masterzip_dir/termux-config-master"
 
-mkdir -p "$HOME/tmp"
+package_file="$master_dir/data/packages.txt"
 
-[ "$package_file" ] || wget -O "$package_file" "$package_file_url"
+mkdir -p "$HOME/tmp" "$HOME/bin"
+
+[ -f "$masterzip_file" ] || wget -O "$masterzip_file" "$masterzip_url"
+rm -rf "$masterzip_dir"
+mkdir -p "$masterzip_dir"
+busybox unzip -d "$masterzip_dir" "$masterzip_file"
 
 packages="`busybox sed 's, -.*,,' "$package_file"`"
 
-apt install $packages
+apt install -y $packages
 
+cp -rp "$master_dir/data/HOME/." "$HOME"
 
 exit $?
 

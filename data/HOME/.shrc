@@ -1,0 +1,21 @@
+# Umgebungsvariablen und solches, unabhaengig von der
+# verwendeten Shell (zsh, bash, ...)
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# Lynx
+if [ -r "$HOME/lynx.cfg" ]; then
+    LYNX_CFG="$HOME/lynx.cfg"; export LYNX_CFG
+fi
+
+# Lade bash_completion für tmux, in der bash (wenn es "complete" gibt)
+type complete > /dev/null 2>&1 && [[ -r ~/.tmux/bash_completion_tmux.sh ]] && . ~/.tmux/bash_completion_tmux.sh
+
+# Liquidprompt
+# https://github.com/nojhan/liquidprompt
+# http://www.deimeke.net/dirk/blog/index.php?/archives/3241-Liquidprompt-....html
+# Siehe auch ~/.liquidpromptrc
+#source ~/Repos/liquidprompt/liquidprompt
+
+# EOF
