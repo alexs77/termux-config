@@ -9,7 +9,7 @@ To get going, copy the following command and paste it in Termux:
 apt update ; \
 apt install -y wget ; \
 hash -r ; \
-wget -qO- https://bitbucket.org/alexs77/termmux-config/raw/HEAD/scripts/setup.sh | busybox ash -x
+wget -qO- https://bitbucket.org/alexs77/termux-config/raw/HEAD/scripts/setup.sh | busybox ash -x
 ```
 
 This is the [start.sh](scripts/start.sh) script.
