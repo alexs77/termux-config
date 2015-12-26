@@ -18,4 +18,7 @@ type complete > /dev/null 2>&1 && [[ -r ~/.tmux/bash_completion_tmux.sh ]] && . 
 # Siehe auch ~/.liquidpromptrc
 #source ~/Repos/liquidprompt/liquidprompt
 
+# Script to source for ssh-agent to work (from termux)
+. source-ssh-agent
+
 # EOF
