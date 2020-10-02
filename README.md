@@ -15,3 +15,5 @@ wget -qO- https://github.com/alexs77/termux-config/raw/master/scripts/setup.sh |
 This is the [start.sh](scripts/start.sh) script.
 
 This will download and run the [setup](scripts/setup.sh) file from the repo.
+
+Thank You
